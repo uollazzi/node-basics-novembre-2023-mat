@@ -91,3 +91,7 @@ myUrl();
 console.log("==========");
 import myProcess from "./es-process";
 myProcess();
+
+console.log("==========");
+import runFsExamples from "./es-fs";
+runFsExamples();
