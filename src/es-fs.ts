@@ -76,7 +76,7 @@ export default () => {
 
         const dataUltimaModifica = DateTime.fromMillis(entity.mtimeMs);
 
-        console.log(chalk.yellow("Data ultima modifica:"), chalk.red(dataUltimaModifica.toLocaleString()), chalk.green(dataUltimaModifica.toISOTime()));
+        console.log(chalk.yellow("Data ultima modifica:"), chalk.bgWhite(chalk.red(dataUltimaModifica.toLocaleString())), chalk.green(dataUltimaModifica.toISOTime()));
     } catch (err) {
         console.error("ERRORE NELLE STATS DEL FILE:", err);
     }
