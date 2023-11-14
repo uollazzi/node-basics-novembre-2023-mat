@@ -6,6 +6,8 @@ export const salvaJson = async (file: string, url: string) => {
         let json = await res.json();
 
         fs.writeFileSync(file, JSON.stringify(json, null, 4));
+
+        return json;
     } catch (error) {
         console.error("ERRORE GESTITO:", error);
     }
